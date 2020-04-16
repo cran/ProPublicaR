@@ -1,4 +1,4 @@
-#' Get a Specific Bil
+#' Get a Specific Bill
 #' 
 #' Use this request type to get details on bills that may be considered by the House or Senate in the near future,
 #' based on scheduled published or announced by congressional leadership.
@@ -11,7 +11,7 @@
 #' may be considered at any time.
 #'
 #' @param bill_id a bill slug, for example hr4881 - these can be found in the recent bill response.
-#' @param congress 105-115
+#' @param congress 105-116
 #' @inheritParams get_new_members
 #' 
 #' @return List with the result of the query
@@ -21,15 +21,8 @@
 #' \donttest{
 #' get_a_bill(115, 'hr21')
 #' }
-get_a_bill <- function(congress, bill_id, myAPI_Key){
+get_a_bill <- function(congress, bill_id, page = 1, myAPI_Key){
   API = 'congress'
-  #HTTP Request
-  #GET https://api.propublica.org/congress/v1/{congress}/bills/{bill-id}.json
-  if (missing(myAPI_Key)) {
-    myAPI_Key <- config::get('ProPublica')[[API]] #config::get('ProPublica')[[1]]
-  }
-  if(is.null(myAPI_Key))
-    stop("API key not found. \nHint: This should be in config.yml in your working directory or higher.")
   query <- sprintf("%s/bills/%s.json", congress, bill_id)
-  pp_query(query, API)
+  pp_query(query, page = page, API)
 }

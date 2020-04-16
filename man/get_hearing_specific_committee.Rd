@@ -4,14 +4,22 @@
 \alias{get_hearing_specific_committee}
 \title{Get Hearings for a Specific Committee}
 \usage{
-get_hearing_specific_committee(congress, chamber, committee_id, myAPI_Key)
+get_hearing_specific_committee(
+  congress,
+  chamber,
+  committee_id,
+  page = 1,
+  myAPI_Key
+)
 }
 \arguments{
-\item{congress}{114-115}
+\item{congress}{114-116}
 
 \item{chamber}{house or senate}
 
 \item{committee_id}{Optional committee abbreviation, for example HSAG. Use the full committees response to find abbreviations.}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

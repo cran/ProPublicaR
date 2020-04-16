@@ -4,22 +4,30 @@
 \alias{compare_two_member_bill_sponsorships}
 \title{Compare Two Members’ Bill Sponsorships}
 \usage{
-compare_two_member_bill_sponsorships(first_member_id, second_member_id,
-  congress, chamber, myAPI_Key)
+compare_two_member_bill_sponsorships(
+  first_member_id,
+  second_member_id,
+  congress,
+  chamber,
+  page = 1,
+  myAPI_Key
+)
 }
 \arguments{
 \item{first_member_id}{The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.}
 
 \item{second_member_id}{The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.}
 
-\item{congress}{102-115 for House, 101-115 for Senate}
+\item{congress}{102-116 for House, 101-116 for Senate}
 
 \item{chamber}{house o senate}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
-List of returned JSON from endpoint that retrieves bill sponsorship comparation between two members who served in the same Congress and chamber
+List of bill sponsorship comparison between two members who served in the same Congress and chamber
 }
 \description{
 To compare bill sponsorship between two members who served in the same Congress and chamber. HTTP Request: GET https://api.propublica.org/congress/v1/members/{first-member-id}/bills/{second-member-id}/{congress}/{chamber}.json

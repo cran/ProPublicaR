@@ -15,13 +15,13 @@
 #' \donttest{
 #' get_independent_expenditure_by_date(2016, year = 2018, month ='01', day = '01')
 #' }
-get_independent_expenditure_by_date<- function(cycle=2018, year, month, day, myAPI_Key){
+get_independent_expenditure_by_date<- function(cycle=2018, year, month, day, page = 1, myAPI_Key){
   API = 'campaign-finance'
   if(!validate_cycle(cycle)){
     stop("Incorrect cycle")
   }
   if(cycle < 2009){
-    stop("Incorrect cycle: independent expenditures are from 2009-present")}
+    stop("Incorrect cycle: independent expenditures are from 2009 to present")}
   if(nchar(year)!=4){
     stop("Year should be four-digit year")  
   }
@@ -30,5 +30,5 @@ get_independent_expenditure_by_date<- function(cycle=2018, year, month, day, myA
   }
   query <- stringr::str_glue("{cycle}/independent_expenditures/{year}/{month}/{day}.json", cycle, year, month, day)
 
-  pp_query(query, API, myAPI_Key = myAPI_Key)
+  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
 }

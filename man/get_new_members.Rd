@@ -4,16 +4,18 @@
 \alias{get_new_members}
 \title{Get New Members}
 \usage{
-get_new_members(myAPI_Key)
+get_new_members(page = 1, myAPI_Key)
 }
 \arguments{
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
+
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves a list of the most recent new members of the current Congress
 }
 \description{
-To get a list of the most recent new members of the current Congress. 
+To get a list of the most recent new members of the current Congress.
 HTTP Request: GET https://api.propublica.org/congress/v1/members/new.json
 }
 \examples{

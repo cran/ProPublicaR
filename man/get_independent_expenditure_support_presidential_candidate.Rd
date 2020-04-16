@@ -5,11 +5,16 @@
 \alias{get_independent_expenditure_support_presidential_candidate}
 \title{Get Independent Expenditures that Support or Oppose Presidential Candidates}
 \usage{
-get_independent_expenditure_support_presidential_candidate(cycle = 2018,
-  myAPI_Key)
+get_independent_expenditure_support_presidential_candidate(
+  cycle = 2018,
+  page = 1,
+  myAPI_Key
+)
 }
 \arguments{
 \item{cycle}{The election cycle}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

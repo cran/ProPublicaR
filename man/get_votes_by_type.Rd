@@ -4,15 +4,22 @@
 \alias{get_votes_by_type}
 \title{Get Votes by Type}
 \usage{
-get_votes_by_type(congress, chamber = c("house", "senate"), vote_type,
-  myAPI_Key)
+get_votes_by_type(
+  congress,
+  chamber = c("house", "senate"),
+  vote_type,
+  page = 1,
+  myAPI_Key
+)
 }
 \arguments{
-\item{congress}{102-115 for House, 80-115 for Senate}
+\item{congress}{102-116 for House, 80-116 for Senate}
 
 \item{chamber}{house or senate}
 
 \item{vote_type}{missed, party, loneno or perfect}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

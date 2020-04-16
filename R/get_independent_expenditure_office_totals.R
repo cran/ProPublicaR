@@ -16,15 +16,15 @@
 #' get_independent_expenditure_office_totals(2016, 'house')
 #' get_independent_expenditure_office_totals(2016, 'senate')
 #' }
-get_independent_expenditure_office_totals<- function(cycle=2018, office = c('house', 'senate', 'president'), myAPI_Key){
+get_independent_expenditure_office_totals<- function(cycle=2018, office = c('house', 'senate', 'president'), page = 1, myAPI_Key){
   API = 'campaign-finance'
   if(!validate_cycle(cycle)){
     stop("Incorrect cycle")
   }
   if(cycle < 2009){
-    stop("Incorrect cycle: independent expenditures are from 2009-present")}
+    stop("Incorrect cycle: independent expenditures are from 2009 to present")}
   if(!office%in%c('house','senate', 'president'))
     stop("Incorrect office. Should be \'house\', \'president\' or \'senate\', lowercase.")
   query <- sprintf("%s/independent_expenditures/race_totals/%s.json", cycle, office)
-  pp_query(query, API, myAPI_Key = myAPI_Key)
+  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
 }

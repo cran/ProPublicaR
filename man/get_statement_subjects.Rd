@@ -4,16 +4,20 @@
 \alias{get_statement_subjects}
 \title{Get Statement Subjects}
 \usage{
-get_statement_subjects(myAPI_Key)
+get_statement_subjects(page = 1, myAPI_Key)
 }
 \arguments{
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
+
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves all of the subjects that have been used at least once.
 }
 \description{
-To get lists of subjects used to categorize congressional statements, use the following function. hese subjects are not automatically assigned but are manually curated by ProPublica, although they are based on legislative subjects produced by the Library of Congress. HTTP Request: GET https://api.propublica.org/congress/v1/statements/subjects.json
+Get lists of subjects used to categorize congressional statements, use the following function.
+These subjects are not automatically assigned but are manually curated by ProPublica, although
+they are based on legislative subjects produced by the Library of Congress.
 }
 \examples{
 \donttest{

@@ -1,6 +1,8 @@
 #' Get Statement Subjects
 #'
-#'To get lists of subjects used to categorize congressional statements, use the following function. hese subjects are not automatically assigned but are manually curated by ProPublica, although they are based on legislative subjects produced by the Library of Congress. HTTP Request: GET https://api.propublica.org/congress/v1/statements/subjects.json
+#'Get lists of subjects used to categorize congressional statements, use the following function. 
+#'These subjects are not automatically assigned but are manually curated by ProPublica, although 
+#'they are based on legislative subjects produced by the Library of Congress. 
 #'
 #' @inheritParams get_new_members
 #'
@@ -11,8 +13,8 @@
 #' \donttest{
 #' get_statement_subjects()
 #' }
-get_statement_subjects <- function(myAPI_Key){
+get_statement_subjects <- function(page = 1, myAPI_Key){
   API = 'congress'
   query <- "statements/subjects.json"
-  pp_query(query, API, myAPI_Key = myAPI_Key)
+  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
 }

@@ -4,11 +4,17 @@
 \alias{get_specific_roll_call_vote}
 \title{Get a Specific Roll Call Vote}
 \usage{
-get_specific_roll_call_vote(congress, chamber = c("house", "senate"),
-  session_number, roll_call_number, myAPI_Key)
+get_specific_roll_call_vote(
+  congress,
+  chamber = c("house", "senate"),
+  session_number,
+  roll_call_number,
+  page = 1,
+  myAPI_Key
+)
 }
 \arguments{
-\item{congress}{102-115 for House, 80-115 for Senate}
+\item{congress}{102-116 for House, 80-116 for Senate}
 
 \item{chamber}{house or senate}
 
@@ -16,6 +22,8 @@ get_specific_roll_call_vote(congress, chamber = c("house", "senate"),
 passed (latest_major_action_date), enacted (enacted), vetoed (vetoed).}
 
 \item{roll_call_number}{integer}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

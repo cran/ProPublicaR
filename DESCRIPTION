@@ -1,7 +1,7 @@
 Package: ProPublicaR
 Type: Package
 Title: Access Functions for ProPublica's APIs
-Version: 0.9.2
+Version: 1.1.1
 Authors@R: c(
     person("Aleksander", "Dietrichson", email = "dietrichson@gmail.com", role=c("aut", "cre")),
     person("Joselina", "Davit", email = "joselinadavyt@gmail.com", role = c("aut"))
@@ -20,7 +20,7 @@ Imports: dplyr, stringr, httr, config, lubridate
 Suggests: testthat, httptest, knitr
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.1.9000
+RoxygenNote: 7.1.0
 Collate: 'a_get_new_members.R' 'bills_legislation_by_keyword.R'
         'compare_two_member_bill_sponsorships.R'
         'compare_two_member_vote_positions.R' 'data.R' 'get_a_bill.R'
@@ -93,13 +93,13 @@ Collate: 'a_get_new_members.R' 'bills_legislation_by_keyword.R'
         'list_members_chamber_congress.R' 'lists_of_committees.R'
         'pp_convert_to_data_frame.R' 'pp_query.R'
         'recent_bills_by_member.R' 'recent_bills_by_subject.R'
-        'recent_bills_by_type.R'
+        'recent_bills_by_type.R' 'retrieve_key.R'
         'search_lobbying_representation_filings.R' 'validate_cycle.R'
-        'validate_district.R' 'validate_state.R'
+        'validate_district.R' 'validate_state.R' 'zzz.R'
 NeedsCompilation: no
-Packaged: 2019-04-05 16:29:22 UTC; sasha
+Packaged: 2020-04-16 18:05:57 UTC; sasha
 Author: Aleksander Dietrichson [aut, cre],
   Joselina Davit [aut]
 Maintainer: Aleksander Dietrichson <dietrichson@gmail.com>
 Repository: CRAN
-Date/Publication: 2019-04-06 10:43:00 UTC
+Date/Publication: 2020-04-16 20:30:02 UTC

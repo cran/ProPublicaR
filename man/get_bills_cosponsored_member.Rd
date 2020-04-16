@@ -4,13 +4,19 @@
 \alias{get_bills_cosponsored_member}
 \title{Get Bills Cosponsored by a Specific Member}
 \usage{
-get_bills_cosponsored_member(member_id, type = c("cosponsored",
-  "withdrawn"), myAPI_Key)
+get_bills_cosponsored_member(
+  member_id,
+  type = c("cosponsored", "withdrawn"),
+  page = 1,
+  myAPI_Key
+)
 }
 \arguments{
 \item{member_id}{The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.}
 
 \item{type}{cosponsored or withdrawn}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

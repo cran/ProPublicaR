@@ -2,12 +2,14 @@
 % Please edit documentation in R/search_lobbying_representation_filings.R
 \name{search_lobbying_representation_filings}
 \alias{search_lobbying_representation_filings}
-\title{Search Lobbying Representation filings}
+\title{Search Lobbying Representation Filings}
 \usage{
-search_lobbying_representation_filings(query, myAPI_Key)
+search_lobbying_representation_filings(query, page = 1, myAPI_Key)
 }
 \arguments{
 \item{query}{keyword or phrase}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
@@ -15,7 +17,8 @@ search_lobbying_representation_filings(query, myAPI_Key)
 List of returned JSON from endpoint that retrieves
 }
 \description{
-To get the 20 most recent lobbying representation filings for a given search term, use the following function. HTTP Request: GEThttps://api.propublica.org/congress/v1/lobbying/search.json?query={query}
+Returns recent lobbying representation filings for a given search term,
+in batches of twenty.
 }
 \examples{
 \donttest{

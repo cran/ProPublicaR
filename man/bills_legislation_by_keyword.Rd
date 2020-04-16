@@ -4,8 +4,13 @@
 \alias{bills_legislation_by_keyword}
 \title{Search Bills: to search the title and full text of legislation by keyword to get the 20 most recent bills}
 \usage{
-bills_legislation_by_keyword(query_keyword, sort = c("date", "_score"),
-  dir = c("desc", "asc"), myAPI_Key)
+bills_legislation_by_keyword(
+  query_keyword,
+  sort = c("date", "_score"),
+  dir = c("desc", "asc"),
+  page = 1,
+  myAPI_Key
+)
 }
 \arguments{
 \item{query_keyword}{keyword or phrase to search the title and full text of legislation to get the 20 most recent bills}
@@ -13,6 +18,8 @@ bills_legislation_by_keyword(query_keyword, sort = c("date", "_score"),
 \item{sort}{_score or date (default is date)}
 
 \item{dir}{sort direction: asc or desc}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
