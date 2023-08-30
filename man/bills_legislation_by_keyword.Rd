@@ -37,4 +37,5 @@ Search results can be sorted by date (the default) or by relevance, and in ascen
 \dontrun{
 bills_legislation_by_keyword(query_keyword = 'megahertz')
 }
+
 }
