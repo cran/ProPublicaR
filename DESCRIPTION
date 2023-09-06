@@ -1,7 +1,7 @@
 Package: ProPublicaR
 Type: Package
 Title: Access Functions for ProPublica's APIs
-Version: 1.1.3
+Version: 1.1.4
 Authors@R: c(
     person("Aleksander", "Dietrichson", email = "dietrichson@gmail.com", role=c("aut", "cre")),
     person("Joselina", "Davit", email = "joselinadavyt@gmail.com", role = c("aut"))
@@ -97,9 +97,9 @@ Collate: 'a_get_new_members.R' 'bills_legislation_by_keyword.R'
         'search_lobbying_representation_filings.R' 'validate_cycle.R'
         'validate_district.R' 'validate_state.R' 'zzz.R'
 NeedsCompilation: no
-Packaged: 2023-08-30 22:12:49 UTC; r227303
+Packaged: 2023-09-06 17:09:29 UTC; r227303
 Author: Aleksander Dietrichson [aut, cre],
   Joselina Davit [aut]
 Maintainer: Aleksander Dietrichson <dietrichson@gmail.com>
 Repository: CRAN
-Date/Publication: 2023-08-30 22:30:06 UTC
+Date/Publication: 2023-09-06 17:20:02 UTC

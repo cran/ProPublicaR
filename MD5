@@ -1,4 +1,4 @@
-b8e69deb90e09a23dabd71c620552e0e *DESCRIPTION
+25f7acf4db13aba5b8346fa03d2eaeb5 *DESCRIPTION
 93fafe594f09d9e61877efc391c2a497 *LICENSE
 9ceae1c440f81ba9bd5811efb52fbd67 *NAMESPACE
 f0192e755930b89cebe438ff7c77362a *NEWS.md
@@ -90,7 +90,7 @@ cfec6dffddf5c103aecca65ac262425c *R/get_statement_subjects.R
 65da58a800faa92747d9618fb1ab7b3b *R/get_votes_by_date.R
 932ba8c007de9ecf512184356f2caf5d *R/get_votes_by_date_range.R
 7b4ec1025445bc01cefa97afbcf4a2dd *R/get_votes_by_type.R
-4c5e243eec93ed8ea1a1c74241bd4f03 *R/list_members_chamber_congress.R
+ed3448cd83e21ad1d55431950ebdd714 *R/list_members_chamber_congress.R
 1fc7385d8dd2469ad88d6c2d51c8645a *R/lists_of_committees.R
 85c11e06e7eff276df21ae0328246f64 *R/pp_convert_to_data_frame.R
 59acfcbd5a0c4fafd365bf0148df2abd *R/pp_query.R
@@ -102,7 +102,7 @@ d931f829312b3fa6aae177a1686ec177 *R/recent_bills_by_subject.R
 3114d4a88cfbc4016c78b80237e5a222 *R/validate_cycle.R
 c777997a96a9b219f886aefe35bc83db *R/validate_district.R
 1db59fa85b860386fc91f1b44372faeb *R/validate_state.R
-d0c4676b3396950341cec6d2720f9e8d *R/zzz.R
+d1cb561d00f318b2fbd31041beacdd32 *R/zzz.R
 d1c44cf1f5f92d497509a28aa32d354c *README.md
 b2e965cdbfaac7fce0ec93d66c8849b3 *data/us_congressional_districts.rda
 246515d2fbf13161de523f6be7145012 *inst/config_template.yml
@@ -193,7 +193,7 @@ c679dd74efa2e061c968a0a4ad75be65 *man/get_statement_subjects.Rd
 8d5f5a74b0885c404abde95bd1586002 *man/get_votes_by_date.Rd
 ca0e22f30259a44020b2c1b6fd9f2759 *man/get_votes_by_date_range.Rd
 ca87e8fa6f61fc7d230610cdd7fda54a *man/get_votes_by_type.Rd
-5fbd7eccbb2c1f6b5934ea4836b13926 *man/list_members_chamber_congress.Rd
+5b24750fef7baa8302f450723b266645 *man/list_members_chamber_congress.Rd
 af8d531c8ab8eb1de890b946d5892e45 *man/lists_of_committees.Rd
 e28f963b368ff78ebfb7e849447f4d50 *man/pp_convert_to_data_frame.Rd
 f69110012b2d1806fdeb63af73ab3f2b *man/pp_query.Rd
